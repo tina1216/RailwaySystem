@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ClassNote"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ClassNote">
+				<Option output="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/ClassNote" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClassNote"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ClassNote/fast">
+				<Option output="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/ClassNote" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClassNote/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/tina/Documents/Develop/APU/C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/Admin.cpp">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/Admin.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/CustomerList.cpp">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/CustomerList.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/CustomerNode.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/SubwayList.cpp">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/SubwayList.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/SubwayNode.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/TicketList.cpp">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/TicketList.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/TicketNode.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/Utils.cpp">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/Utils.h">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/main.cpp">
+			<Option target="ClassNote"/>
+		</Unit>
+		<Unit filename="/Users/tina/Documents/Develop/APU/C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,3 +1,3 @@
-C:/Users/takak/Documents/Develop/APU/C++/ClassNote/cmake-build-debug/CMakeFiles/ClassNote.dir
-C:/Users/takak/Documents/Develop/APU/C++/ClassNote/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/takak/Documents/Develop/APU/C++/ClassNote/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/CMakeFiles/ClassNote.dir
+/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tina/Documents/Develop/APU/C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
