@@ -17,9 +17,10 @@ public:
     TicketNode* searchByTicketId(int ticketId);
     void deleteByTicketId(int ticketId);
 
-    //sorting
-
-    TicketList* bubbleSort(TicketNode* tNode);
+    //sorting - merge sort
+    TicketList* split(TicketNode* tNode);
+    TicketList* merge(TicketNode* firstNode, TicketNode* secondNode);
+    TicketList* mergeSort(TicketNode* tHead);
 
     TicketList() {
         this->head = nullptr;

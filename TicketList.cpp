@@ -54,28 +54,16 @@ void TicketList::deleteByTicketId(int ticketId) {
     return;
 }
 
-// sorting --------------------
-TicketList* TicketList::bubbleSort(TicketNode *tNode) {
-    int swapped, i;
-    TicketNode* currNode;
-    TicketNode* temp;
-    TicketNode* sortedList = nullptr;
+// sorting merge sort --------------------
+TicketList* TicketList::split(TicketNode* tNode) {
 
-    if(tNode == nullptr) {
-        return NULL;
-    }
-    do {
-        swapped = 0;
-        currNode = tNode;
 
-        while(currNode->next != temp) {
-            if (currNode->ticketId > currNode->next->ticketId) {
-                swap(currNode->data, ptr1->next->data);
-                swapped = 1;
-            }
-            ptr1 = ptr1->next;
-        }
-        lptr = ptr1;
-        }
-    } while(swapped);
+}
+TicketList* TicketList::merge(TicketNode* firstNode, TicketNode* secondNode) {
+
+}
+
+
+TicketList* TicketList::mergeSort(TicketNode *tNode) {
+
 }

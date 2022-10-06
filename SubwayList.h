@@ -12,6 +12,7 @@ public:
     int listSize;
     SubwayNode* head;
     SubwayNode* tail;
+    //sorting ref
 
     void printSubways();
     void insertFirst(SubwayNode* newNode);

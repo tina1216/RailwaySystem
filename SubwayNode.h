@@ -18,8 +18,8 @@ public:
     float nextTime;
     string sightseeing;
 
-    SubwayNode(int subwayId, string subwayName, float nextDistance, float nextFare, float nextTime,
-               string sightseeing){
+    SubwayNode(int subwayId, string subwayName, float nextDistance,
+               float nextFare, float nextTime, string sightseeing){
     this->subwayId = subwayId;
     this->subwayName = subwayName;
     this->nextDistance = nextDistance;
@@ -31,7 +31,8 @@ public:
     this->prev = nullptr;
     }
 
-    SubwayNode(int subwayId, string subwayName, float nextDistance, float nextFare, float nextTime){
+    SubwayNode(int subwayId, string subwayName, float nextDistance,
+               float nextFare, float nextTime){
         this->subwayId = subwayId;
         this->subwayName = subwayName;
         this->nextDistance = nextDistance;

@@ -6,6 +6,7 @@
 #define CLASSNOTE_ADMIN_H
 
 #include <iostream>
+
 struct Admin {
     int adminId;
     string psw;

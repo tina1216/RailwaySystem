@@ -10,6 +10,8 @@
 class TicketNode {
     public:
         TicketNode* next;
+        TicketNode* prev;
+
         int ticketId, transactionId;
         string sourceSubway, targetSubway, transactionTime, departureTime;
         int customerId;
@@ -28,6 +30,7 @@ class TicketNode {
             this->arrivalTime = arrivalTime;
 
             this->next = nullptr;
+            this->prev = nullptr;
         }
 
 

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <limits>
 
 #include "TicketList.h"
 #include "Utils.h"
@@ -96,9 +97,11 @@ int loginCustomer(CustomerList *cList) {
     string psw;
     cout << "Enter your id: ";
     cin >> id;
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
     cout << "Enter your password: ";
     getline(cin,psw);
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
     CustomerNode* node = cList->searchCustomer(id);
 
@@ -124,12 +127,15 @@ int signupCustomer(CustomerList* cList) {
 
     cout << "Enter your name: ";
     getline(cin, name);
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
     cout << "Enter your i-cad(or passport) number: ";
     getline(cin, idNum);
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
     cout << "Enter your password: ";
     getline(cin, psw);
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
     cout << "Welcome " << name << ". Your id : " << id << endl;
 
@@ -145,8 +151,10 @@ bool loginAdmin(Admin admins[]) {
 
     cout << "Enter your id: ";
     cin >> id;
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
     cout << "Enter your password: ";
     getline(cin, psw);
+    cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
     if (admins[id - 1].psw == psw) {
         return true;
@@ -202,6 +210,7 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
         int choice;
         cout << endl << "Enter your choice: ";
         cin >> choice;
+        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
         switch(choice) {
             case 1: {
@@ -212,7 +221,7 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
 
                 cout << endl << "Enter your choice: ";
                 cin >> choice1;
-                //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                 string sName;
                 float nextDistance, nextFare, nextTime;
@@ -222,18 +231,19 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
                     case 1: //insert at the front
                         cout << "Enter new name of station: ";
                         getline(cin, sName);
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter fare (RM) to next station: ";
                         cin >> nextFare;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter time (min) to reach next station: ";
                         cin >> nextTime;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter distance (KM) to next station: ";
                         cin >> nextDistance;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         newNode = new SubwayNode(subwayList->listSize + 1, sName, nextDistance, nextFare, nextTime);
                         subwayList->insertFirst(newNode);
@@ -246,15 +256,15 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
 
                         cout << "Enter fare (RM) to this station: ";
                         cin >> nextFare;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter time (min) to reach this station: ";
                         cin >> nextTime;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter distance (KM) from previous station: ";
                         cin >> nextDistance;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         subwayList->insertLastByAdmin(sName, nextFare, nextTime, nextDistance);
                         cout << "Successfully added a new station." << endl;
@@ -264,7 +274,7 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
                         int targetSubwayId;
                         cout << endl << "Enter subway ID you wish to add after: ";
                         cin >> targetSubwayId;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         if (targetSubwayId == subwayList->listSize) {
                             cout << "Choose 2nd option to insert at the end" << endl;
@@ -276,15 +286,15 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
 
                         cout << "Enter fare (RM) to next station: ";
                         cin >> nextFare;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter time (min) to reach next station: ";
                         cin >> nextTime;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         cout << "Enter distance (KM) to next station: ";
                         cin >> nextDistance;
-                        //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                        cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                         newNode = new SubwayNode(subwayList->listSize + 1, sName, nextDistance, nextFare, nextTime);
                         subwayList->insertAfterThis(targetSubwayId, newNode);
@@ -305,7 +315,7 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
                 int subwayId;
                 cout << endl << "Enter Subway id: ";
                 cin >> subwayId;
-                //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                 SubwayNode* editableSubway = subwayList->searchBySubwayId(subwayId);
 
@@ -325,11 +335,11 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
                 // reading new info
                 cout << "Enter new fare to next station: ";
                 cin >> nextFare;
-                //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                 cout << "Enter new time to reach next staion: ";
                 cin >> nextTravelTime;
-                //cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 
                 cout << "Enter new name of station: ";
                 getline(cin, sName);
@@ -363,7 +373,7 @@ void adminChoices(SubwayList* subwayList, TicketList* tList) {
 
             case 4: {
                 // sort purchase based on name
-                tList->MergeSort(&tList->head);
+                tList->mergeSort(&tList->head);
                 cout << "Sorted by customer name" << endl;
                 break;
             }
